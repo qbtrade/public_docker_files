@@ -24,4 +24,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - run: ls
+      - run: pwd
       - run: python build_all.py
