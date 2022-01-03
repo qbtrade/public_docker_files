@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """
 Usage:
   clash_entry [options]
@@ -31,6 +31,7 @@ def get_new_txt():
                 x.replace('{{', '').replace('}}', '').lower().replace('_', '-')
             print(x, docopt_key)
             new_txt = new_txt.replace(x, docopt.get(docopt_key, ''))
+        return new_txt
 
 
 def main():
