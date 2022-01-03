@@ -1,2 +1,2 @@
 FROM ubuntu
-RUN apt update
+RUN apt update -y && apt upgrade -y
