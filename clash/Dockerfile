@@ -10,4 +10,7 @@ RUN cd /tmp && \
   mv clash /usr/local/bin
 COPY clash_entry.py /usr/local/bin/clash_entry
 COPY clash_config.template /clash_config.template
+EXPOSE 1080
+EXPOSE 1060
 RUN chmod +x /usr/local/bin/clash_entry
+
