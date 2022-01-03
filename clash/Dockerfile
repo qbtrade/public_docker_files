@@ -1,7 +1,7 @@
 FROM ubuntu:focal-20211006
 RUN  sed -i 's/archive.ubuntu/mirrors.163/g' /etc/apt/sources.list
 RUN  sed -i 's/security.ubuntu/mirrors.163/g' /etc/apt/sources.list
-RUN apt update && apt install wget python3 python3-pip -y && rm -rf /var/lib/apt/lists/*
+RUN apt update && apt install vim wget python3 python3-pip -y && rm -rf /var/lib/apt/lists/*
 RUN pip3 install docopt arrow
 RUN cd /tmp && \
   wget https://github.com/Dreamacro/clash/releases/download/v1.9.0/clash-linux-amd64-v1.9.0.gz -O clash.gz && \
