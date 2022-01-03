@@ -1,0 +1,18 @@
+port: {{HTTP_PORT}}
+socks-port: {{SOCKS_PORT}}
+allow-lan: false
+proxies:
+  - name: ucloud
+    type: ss
+    server: {{SERVER_HOST}}
+    port: {{SERVER_PORT}}
+    cipher: {{SERVER_METHOD}}
+    password: {{SERVER_PORT}}
+proxy-groups:
+  - name: MyGroup
+    type: select
+    proxies:
+      - ucloud
+rules:
+  - GEOIP,CN,DIRECT
+  - MATCH,MyGroup
