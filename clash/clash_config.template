@@ -1,6 +1,6 @@
 port: {{HTTP_PORT}}
 socks-port: {{SOCKS_PORT}}
-allow-lan: false
+allow-lan: true
 proxies:
   - name: ucloud
     type: ss
