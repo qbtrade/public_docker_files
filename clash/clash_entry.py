@@ -21,7 +21,7 @@ print(docopt)
 
 def get_new_txt():
     for p in ['./clash_config.template', '/clash_config.template']:
-        p = Path('./clash_config.template')
+        p = Path(p)
         if not p.exists():
             continue
         txt = p.read_text()
