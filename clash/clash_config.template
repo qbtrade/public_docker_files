@@ -7,7 +7,7 @@ proxies:
     server: {{SERVER_HOST}}
     port: {{SERVER_PORT}}
     cipher: {{SERVER_METHOD}}
-    password: {{SERVER_PORT}}
+    password: {{SERVER_PASSWORD}}
 proxy-groups:
   - name: MyGroup
     type: select
