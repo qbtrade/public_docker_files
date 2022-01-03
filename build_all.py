@@ -1,4 +1,5 @@
 import os
 
-os.system('cd play && docker build . -t qbtradepub/play')
-os.system('docker push qbtradepub/play')
+for folder in ['play', 'clash']:
+	os.system(f'cd {folder} && docker build . -t qbtradepub/{folder}')
+	os.system(f'docker push qbtradepub/{folder}')
