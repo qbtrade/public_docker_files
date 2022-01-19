@@ -17,6 +17,4 @@ docker logs -f ss-server
 
 ## check
 
-https_proxy=http://localhost:9110 curl https://ipinfo.io
-
 
