@@ -18,3 +18,7 @@ docker logs -f ss-server
 ## check
 
 
+```
+docker run -it --name ssclient --restart always --net host  qbtradepub/ss-server  ss-local -s 1.2.3.4 -p 9110  -m aes-256-cfb -l 1090 -k xxx -b 0.0.0.0
+
+```
